@@ -11,6 +11,7 @@
 		0F1CDD992B3D73170080C5F5 /* EssentialDev_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1CDD8E2B3D73160080C5F5 /* EssentialDev_.framework */; };
 		0F1CDD9E2B3D73170080C5F5 /* EssentialDev_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1CDD9D2B3D73170080C5F5 /* EssentialDev_Tests.swift */; };
 		0F1CDD9F2B3D73170080C5F5 /* EssentialDev_.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F1CDD912B3D73160080C5F5 /* EssentialDev_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F1CDDA92B3D732D0080C5F5 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1CDDA82B3D732D0080C5F5 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		0F1CDD922B3D73160080C5F5 /* EssentialDev_.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialDev_.docc; sourceTree = "<group>"; };
 		0F1CDD982B3D73170080C5F5 /* EssentialDev@Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EssentialDev@Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1CDD9D2B3D73170080C5F5 /* EssentialDev_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialDev_Tests.swift; sourceTree = "<group>"; };
+		0F1CDDA82B3D732D0080C5F5 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				0F1CDD912B3D73160080C5F5 /* EssentialDev_.h */,
 				0F1CDD922B3D73160080C5F5 /* EssentialDev_.docc */,
+				0F1CDDA82B3D732D0080C5F5 /* FeedItem.swift */,
 			);
 			path = "EssentialDev@";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F1CDDA92B3D732D0080C5F5 /* FeedItem.swift in Sources */,
 				0F1CDD932B3D73160080C5F5 /* EssentialDev_.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +410,7 @@
 		0F1CDDA62B3D73170080C5F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R5599LYD4Y;
@@ -421,6 +426,7 @@
 		0F1CDDA72B3D73170080C5F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R5599LYD4Y;
