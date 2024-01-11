@@ -15,6 +15,7 @@
 		0F23BBAE2B4C8EFC00427AFB /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F23BBAD2B4C8EFC00427AFB /* RemoteFeedLoaderTests.swift */; };
 		0F23BBB12B4C975000427AFB /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F23BBB02B4C975000427AFB /* RemoteFeedLoader.swift */; };
 		0F345A0F2B4F87AC007528BD /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345A0E2B4F87AC007528BD /* HTTPClient.swift */; };
+		0F345A112B4F87F3007528BD /* FeedItemMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345A102B4F87F3007528BD /* FeedItemMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		0F23BBAD2B4C8EFC00427AFB /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
 		0F23BBB02B4C975000427AFB /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		0F345A0E2B4F87AC007528BD /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		0F345A102B4F87F3007528BD /* FeedItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +81,10 @@
 		0F1CDD902B3D73160080C5F5 /* EssentialDev */ = {
 			isa = PBXGroup;
 			children = (
+				0F1CDDAC2B3D746B0080C5F5 /* Feed Feacture */,
 				0F23BBAF2B4C974800427AFB /* Feed API */,
 				0F1CDD912B3D73160080C5F5 /* EssentialDev_.h */,
 				0F1CDD922B3D73160080C5F5 /* EssentialDev_.docc */,
-				0F1CDDAC2B3D746B0080C5F5 /* Feed Feacture */,
 			);
 			path = EssentialDev;
 			sourceTree = "<group>";
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				0F23BBB02B4C975000427AFB /* RemoteFeedLoader.swift */,
+				0F345A102B4F87F3007528BD /* FeedItemMapper.swift */,
 				0F345A0E2B4F87AC007528BD /* HTTPClient.swift */,
 			);
 			path = "Feed API";
@@ -226,6 +229,7 @@
 				0F23BBB12B4C975000427AFB /* RemoteFeedLoader.swift in Sources */,
 				0F345A0F2B4F87AC007528BD /* HTTPClient.swift in Sources */,
 				0F1CDDAB2B3D73BA0080C5F5 /* FeedLoader.swift in Sources */,
+				0F345A112B4F87F3007528BD /* FeedItemMapper.swift in Sources */,
 				0F1CDDA92B3D732D0080C5F5 /* FeedItem.swift in Sources */,
 				0F1CDD932B3D73160080C5F5 /* EssentialDev_.docc in Sources */,
 			);
