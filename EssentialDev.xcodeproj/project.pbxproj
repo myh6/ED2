@@ -58,6 +58,7 @@
 		0F345A1A2B64A012007528BD /* EssentialDev.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialDev.xctestplan; sourceTree = "<group>"; };
 		0F345A1F2B64AD04007528BD /* EssentialDevEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialDevEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F345A212B64AD05007528BD /* EssentialDevEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialDevEndToEndTests.swift; sourceTree = "<group>"; };
+		0F345A2A2B670A9B007528BD /* CI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CI.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		0F1CDD842B3D73160080C5F5 = {
 			isa = PBXGroup;
 			children = (
+				0F345A2A2B670A9B007528BD /* CI.xctestplan */,
 				0F345A1A2B64A012007528BD /* EssentialDev.xctestplan */,
 				0F1CDD902B3D73160080C5F5 /* EssentialDev */,
 				0F1CDD9C2B3D73170080C5F5 /* EssentialDevTests */,
