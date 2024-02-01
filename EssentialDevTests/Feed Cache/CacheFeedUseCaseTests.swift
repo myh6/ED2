@@ -39,7 +39,6 @@ class CacheFeedUseCaseTests: XCTestCase {
         let timestamp = Date()
         let items = [uniqueItem(), uniqueItem()]
         let (sut, store) = makeSUT(currentDate: { timestamp })
-        let deletionError = anyNSError()
         
         sut.save(items) { _ in }
         store.completeDeletionSuccessfully()
