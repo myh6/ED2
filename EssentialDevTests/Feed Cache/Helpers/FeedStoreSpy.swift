@@ -19,6 +19,7 @@ class FeedStoreSpy: FeedStore {
     
     private var deletionCompletion = [DeletionCompletion]()
     private var insertionCompletion = [InsertionCompletion]()
+    private var retrievalCompletion = [RetrievalCompletion]()
     
     func deleteCachedFeed(completion: @escaping DeletionCompletion) {
         deletionCompletion.append(completion)
@@ -46,7 +47,12 @@ class FeedStoreSpy: FeedStore {
         insertionCompletion[index](nil)
     }
     
-    func retrieve() {
+    func retrieve(completion: @escaping RetrievalCompletion) {
         receiveMessages.append(.retrieve)
+        retrievalCompletion.append(completion)
+    }
+    
+    func completeRetrieval(with error: Error, at index: Int = 0) {
+        retrievalCompletion[index](error)
     }
 }
