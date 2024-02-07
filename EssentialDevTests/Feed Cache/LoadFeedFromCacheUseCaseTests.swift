@@ -82,7 +82,7 @@ class LoadFeedFromCacheUseCaseTests: XCTestCase {
         XCTAssertEqual(store.receiveMessages, [.retrieve])
     }
     
-    func test_load_hasNoSideEffectOnEmptyCache() {
+    func test_load_hasNoSideEffectsOnEmptyCache() {
         let (sut, store) = makeSUT()
         
         sut.load { _ in }
@@ -91,7 +91,7 @@ class LoadFeedFromCacheUseCaseTests: XCTestCase {
         XCTAssertEqual(store.receiveMessages, [.retrieve])
     }
     
-    func test_load_hasNoSideEffectOnLessThanSevenDaysOldCache() {
+    func test_load_hasNoSideEffectsOnLessThanSevenDaysOldCache() {
         let fixedCurrentDate = Date()
         let (sut, store) = makeSUT(currentDate: { fixedCurrentDate })
         let lessThanSevenDaysOldTime = fixedCurrentDate.adding(days: -7).adding(seconds: 1)
@@ -103,7 +103,7 @@ class LoadFeedFromCacheUseCaseTests: XCTestCase {
         XCTAssertEqual(store.receiveMessages, [.retrieve])
     }
     
-    func test_load_deletesCacheOnSevenDaysOldCache() {
+    func test_load_hasNoSideEffectsOnSevenDaysOldCache() {
         let fixedCurrentDate = Date()
         let (sut, store) = makeSUT(currentDate: { fixedCurrentDate })
         let sevenDaysOldTime = fixedCurrentDate.adding(days: -7)
