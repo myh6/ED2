@@ -79,6 +79,7 @@ extension LocalFeedLoader {
                 
             case let .found(_, timestamp) where !validate(timestamp):
                 store.deleteCachedFeed { _ in }
+                
             case .empty, .found:
                 break
             }
