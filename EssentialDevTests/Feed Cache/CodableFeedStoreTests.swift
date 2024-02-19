@@ -70,7 +70,11 @@ class CodableFeedStore {
     }
     
     func deleteCachedFeed(completion: @escaping FeedStore.DeletionCompletion) {
-        try? FileManager.default.removeItem(at: storeURL)
+        guard FileManager.default.fileExists(atPath: storeURL.path()) else {
+            return completion(nil)
+        }
+        
+        try! FileManager.default.removeItem(at: storeURL)
         completion(nil)
     }
 
@@ -181,6 +185,7 @@ final class CodableFeedStoreTests: XCTestCase {
         
         expect(sut, toRetrieve: .empty)
     }
+    
     
     //MARK: - Helpers
     private func makeSUT(storeURL: URL? = nil, file: StaticString = #file, line: UInt = #line) -> CodableFeedStore {
