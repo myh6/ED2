@@ -164,11 +164,12 @@ final class CodableFeedStoreTests: XCTestCase {
         XCTAssertNotNil(insertionError, "Expected cache insertion to fail with an error")
     }
     
-    func test_deleteCachedFeed_doesNothingOnEmptyCache() {
+    func test_delete_hasNoSideEffectsOnEmptyCache() {
         let sut = makeSUT()
         
         let capturedError = delete(from: sut)
         XCTAssertNil(capturedError)
+        expect(sut, toRetrieve: .empty)
     }
     
     func test_delete_emptiesPreviouslyInsertedCache() {
