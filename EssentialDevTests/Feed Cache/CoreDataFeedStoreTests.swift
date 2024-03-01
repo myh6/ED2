@@ -9,6 +9,7 @@ import XCTest
 import EssentialDev
 
 class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
+    
     func test_retrieve_deliversEmptyOnEmptyCache() {
         let sut = makeSUT()
         
@@ -51,10 +52,18 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
         assertThatInsertOverridesPreviouslyInsertedCacheValues(on: sut)
     }
     
+    func test_delete_deliversNoErrorOnEmptyCache() {
+        
+    }
+    
     func test_delete_hasNoSideEffectsOnEmptyCache() {
         let sut = makeSUT()
         
         assertThatDeleteHasNoSideEffectsOnEmptyCache(on: sut)
+    }
+    
+    func test_delete_deliversNoErrorOnNonEmptyCache() {
+        
     }
     
     func test_delete_emptiesPreviouslyInsertedCache() {
