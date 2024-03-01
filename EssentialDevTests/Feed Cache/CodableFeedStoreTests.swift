@@ -99,15 +99,7 @@ final class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
     func test_delete_deliversNoErrorOnEmptyCache() {
         let sut = makeSUT()
         
-        var capturedError: Error?
-        let exp = expectation(description: "Wait for deletion")
-        sut.deleteCachedFeed { receivedError in
-            capturedError = receivedError
-            exp.fulfill()
-        }
-        
-        wait(for: [exp], timeout: 1.0)
-        XCTAssertNil(capturedError)
+        assertThatDeleteDeliversNoErrorOnEmptyCache(on: sut)
     }
     
     func test_delete_hasNoSideEffectsOnEmptyCache() {
@@ -118,7 +110,9 @@ final class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
     
     
     func test_delete_deliversNoErrorOnNonEmptyCache() {
+        let sut = makeSUT()
         
+        assertThatDeleteDeliversNoErrorOnNonEmptyCache(on: sut)
     }
     
     func test_delete_emptiesPreviouslyInsertedCache() {
