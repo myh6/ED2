@@ -36,6 +36,13 @@
         "identifier" : "0F345A1E2B64AD04007528BD",
         "name" : "EssentialDevEndToEndTests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:EssentialDev.xcodeproj",
+        "identifier" : "0F1542EF2B96A4BC00AF81B1",
+        "name" : "EssentialDevCacheIntegrationTests"
+      }
     }
   ],
   "version" : 1
