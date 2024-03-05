@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F1542F32B96A4BC00AF81B1 /* EssentialDevCacheIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1542F22B96A4BC00AF81B1 /* EssentialDevCacheIntegrationTests.swift */; };
 		0F1542F42B96A4BC00AF81B1 /* EssentialDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1CDD8E2B3D73160080C5F5 /* EssentialDev.framework */; };
+		0F1542FD2B96A63800AF81B1 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345A162B63839F007528BD /* XCTestCase+MemoryLeakTracking.swift */; };
 		0F1CDD932B3D73160080C5F5 /* EssentialDev_.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0F1CDD922B3D73160080C5F5 /* EssentialDev_.docc */; };
 		0F1CDD992B3D73170080C5F5 /* EssentialDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1CDD8E2B3D73160080C5F5 /* EssentialDev.framework */; };
 		0F1CDD9F2B3D73170080C5F5 /* EssentialDev_.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F1CDD912B3D73160080C5F5 /* EssentialDev_.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -503,6 +504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F1542F32B96A4BC00AF81B1 /* EssentialDevCacheIntegrationTests.swift in Sources */,
+				0F1542FD2B96A63800AF81B1 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
