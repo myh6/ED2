@@ -15,9 +15,15 @@
           "containerPath" : "container:EssentialDev.xcodeproj",
           "identifier" : "0F1CDD8D2B3D73160080C5F5",
           "name" : "EssentialDev"
+        },
+        {
+          "containerPath" : "container:EssentialDev.xcodeproj",
+          "identifier" : "0F448C0F2C8D190A0005DE4A",
+          "name" : "EssentialDeviOS"
         }
       ]
     },
+    "testExecutionOrdering" : "random",
     "threadSanitizerEnabled" : true
   },
   "testTargets" : [
@@ -42,6 +48,13 @@
         "containerPath" : "container:EssentialDev.xcodeproj",
         "identifier" : "0F1542EF2B96A4BC00AF81B1",
         "name" : "EssentialDevCacheIntegrationTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:EssentialDev.xcodeproj",
+        "identifier" : "0F448C162C8D190A0005DE4A",
+        "name" : "EssentialDeviOSTests"
       }
     }
   ],
