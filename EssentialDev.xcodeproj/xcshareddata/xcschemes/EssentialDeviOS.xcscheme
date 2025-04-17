@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1520"
+   LastUpgradeVersion = "1620"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F448C0F2C8D190A0005DE4A"
+               BlueprintIdentifier = "0F9E75102DB1B17200641531"
                BuildableName = "EssentialDeviOS.framework"
                BlueprintName = "EssentialDeviOS"
                ReferencedContainer = "container:EssentialDev.xcodeproj">
@@ -26,15 +26,20 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:EssentialDeviOS.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO"
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F448C162C8D190A0005DE4A"
+               BlueprintIdentifier = "0F9E75172DB1B17200641531"
                BuildableName = "EssentialDeviOSTests.xctest"
                BlueprintName = "EssentialDeviOSTests"
                ReferencedContainer = "container:EssentialDev.xcodeproj">
@@ -62,7 +67,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0F448C0F2C8D190A0005DE4A"
+            BlueprintIdentifier = "0F9E75102DB1B17200641531"
             BuildableName = "EssentialDeviOS.framework"
             BlueprintName = "EssentialDeviOS"
             ReferencedContainer = "container:EssentialDev.xcodeproj">
