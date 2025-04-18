@@ -10,39 +10,6 @@ import UIKit
 import EssentialDev
 @testable import EssentialDeviOS
 
-final class FeedViewController: UITableViewController {
-    private var loader: FeedLoader?
-    
-    convenience init(loader: FeedLoader) {
-        self.init()
-        self.loader = loader
-    }
-    
-    override func viewIsAppearing(_ animated: Bool) {
-        refresh()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        refreshControl = UIRefreshControl()
-        refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
-        refreshControl?.beginRefreshing()
-        load()
-    }
-    
-    @objc private func refresh() {
-        refreshControl?.beginRefreshing()
-        load()
-    }
-    
-    private func load() {
-        loader?.load { [weak self] _ in
-            self?.refreshControl?.endRefreshing()
-        }
-    }
-}
-
 final class FeedViewControllerTests: XCTestCase {
     
     func test_loadFeedActions_requestFeedFromLoader() {
