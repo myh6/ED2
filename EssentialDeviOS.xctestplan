@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "CA3D25CA-9140-4F4A-B717-2878042C1CEF",
+      "id" : "3029A488-63E5-41DC-A12C-7E1FFE070862",
       "name" : "Test Scheme Action",
       "options" : {
 
@@ -13,7 +13,7 @@
       "targets" : [
         {
           "containerPath" : "container:EssentialDev.xcodeproj",
-          "identifier" : "0F9E75102DB1B17200641531",
+          "identifier" : "0FC73FE42DB214CE00EA4604",
           "name" : "EssentialDeviOS"
         }
       ]
@@ -22,10 +22,9 @@
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:EssentialDev.xcodeproj",
-        "identifier" : "0F9E75172DB1B17200641531",
+        "identifier" : "0FC73FEB2DB214CE00EA4604",
         "name" : "EssentialDeviOSTests"
       }
     }
