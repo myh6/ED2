@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1520"
+   LastUpgradeVersion = "1620"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
+      buildImplicitDependencies = "YES"
+      buildArchitectures = "Automatic">
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -14,7 +15,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F448C0F2C8D190A0005DE4A"
+               BlueprintIdentifier = "0FC73FE42DB214CE00EA4604"
                BuildableName = "EssentialDeviOS.framework"
                BlueprintName = "EssentialDeviOS"
                ReferencedContainer = "container:EssentialDev.xcodeproj">
@@ -26,21 +27,13 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F448C162C8D190A0005DE4A"
-               BuildableName = "EssentialDeviOSTests.xctest"
-               BlueprintName = "EssentialDeviOSTests"
-               ReferencedContainer = "container:EssentialDev.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:EssentialDeviOS.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -62,7 +55,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0F448C0F2C8D190A0005DE4A"
+            BlueprintIdentifier = "0FC73FE42DB214CE00EA4604"
             BuildableName = "EssentialDeviOS.framework"
             BlueprintName = "EssentialDeviOS"
             ReferencedContainer = "container:EssentialDev.xcodeproj">
