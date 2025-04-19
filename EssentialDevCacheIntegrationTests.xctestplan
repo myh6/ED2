@@ -1,0 +1,34 @@
+{
+  "configurations" : [
+    {
+      "id" : "4565F444-D25B-4365-8D2F-EE275E927B87",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:EssentialDev.xcodeproj",
+          "identifier" : "0F1CDD8D2B3D73160080C5F5",
+          "name" : "EssentialDev"
+        }
+      ]
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:EssentialDev.xcodeproj",
+        "identifier" : "0F1542EF2B96A4BC00AF81B1",
+        "name" : "EssentialDevCacheIntegrationTests"
+      }
+    }
+  ],
+  "version" : 1
+}
