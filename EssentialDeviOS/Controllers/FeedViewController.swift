@@ -18,23 +18,23 @@ public protocol FeedImageDataLoader {
     func loadImageData(from url: URL, completion: @escaping (Result) -> Void) -> FeedImageDataLoaderTask
 }
 
-final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching {
+final public class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching {
     private var feedLoader: FeedLoader?
     private var imageLoader: FeedImageDataLoader?
     private var tableModel = [FeedImage]()
     private var tasks = [IndexPath: FeedImageDataLoaderTask]()
     
-    convenience init(feedLoader: FeedLoader, imageLoader: FeedImageDataLoader?) {
+    public convenience init(feedLoader: FeedLoader, imageLoader: FeedImageDataLoader?) {
         self.init()
         self.feedLoader = feedLoader
         self.imageLoader = imageLoader
     }
     
-    override func viewIsAppearing(_ animated: Bool) {
+    public override func viewIsAppearing(_ animated: Bool) {
         refresh()
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         refreshControl = UIRefreshControl()
@@ -58,11 +58,11 @@ final class FeedViewController: UITableViewController, UITableViewDataSourcePref
         }
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableModel.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellModel = tableModel[indexPath.row]
         let cell = FeedImageCell()
         cell.locationContainer.isHidden = (cellModel.location == nil)
@@ -89,11 +89,11 @@ final class FeedViewController: UITableViewController, UITableViewDataSourcePref
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    public override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cancelTask(forRowAt: indexPath)
     }
     
-    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+    public func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
         indexPaths.forEach { indexPath in
             let cellModel = tableModel[indexPath.row]
             tasks[indexPath] = imageLoader?.loadImageData(from: cellModel.url) { _ in
@@ -101,7 +101,7 @@ final class FeedViewController: UITableViewController, UITableViewDataSourcePref
         }
     }
     
-    func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
+    public func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
         indexPaths.forEach(cancelTask)
     }
     
