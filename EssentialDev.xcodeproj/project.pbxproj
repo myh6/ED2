@@ -398,6 +398,23 @@
 			path = Codable;
 			sourceTree = "<group>";
 		};
+		0F6EEA012DB5988900EEB3FE /* Feed UI */ = {
+			isa = PBXGroup;
+			children = (
+				0FC740602DB57FF100EA4604 /* Controllers */,
+			);
+			path = "Feed UI";
+			sourceTree = "<group>";
+		};
+		0F6EEA032DB5989900EEB3FE /* Feed UI */ = {
+			isa = PBXGroup;
+			children = (
+				0FC7405D2DB57F7D00EA4604 /* Views */,
+				0FC7405C2DB57F6600EA4604 /* Controllers */,
+			);
+			path = "Feed UI";
+			sourceTree = "<group>";
+		};
 		0F71DA0D2B70227A0044C999 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,8 +446,7 @@
 		0FC73FFC2DB214E200EA4604 /* EssentialDeviOS */ = {
 			isa = PBXGroup;
 			children = (
-				0FC7405D2DB57F7D00EA4604 /* Views */,
-				0FC7405C2DB57F6600EA4604 /* Controllers */,
+				0F6EEA032DB5989900EEB3FE /* Feed UI */,
 				0FC73FFB2DB214E200EA4604 /* EssentialDeviOS.h */,
 			);
 			path = EssentialDeviOS;
@@ -439,7 +455,7 @@
 		0FC73FFE2DB214E200EA4604 /* EssentialDeviOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				0FC740602DB57FF100EA4604 /* Controllers */,
+				0F6EEA012DB5988900EEB3FE /* Feed UI */,
 				0FC740532DB57BE300EA4604 /* Helpers */,
 			);
 			path = EssentialDeviOSTests;
