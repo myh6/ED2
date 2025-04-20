@@ -59,6 +59,7 @@
 		0FC740082DB2DB0200EA4604 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC740072DB2DB0200EA4604 /* FeedViewController.swift */; };
 		0FC740502DB35EF600EA4604 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC7404F2DB35EF600EA4604 /* FeedImageCell.swift */; };
 		0FC740522DB44CE100EA4604 /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC740512DB44CE100EA4604 /* UIView+Shimmering.swift */; };
+		0FC740552DB57BFA00EA4604 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC740542DB57BFA00EA4604 /* UIImage+TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,7 @@
 		0FC740072DB2DB0200EA4604 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0FC7404F2DB35EF600EA4604 /* FeedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCell.swift; sourceTree = "<group>"; };
 		0FC740512DB44CE100EA4604 /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
+		0FC740542DB57BFA00EA4604 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,9 +426,18 @@
 		0FC73FFE2DB214E200EA4604 /* EssentialDeviOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				0FC740532DB57BE300EA4604 /* Helpers */,
 				0FC73FFD2DB214E200EA4604 /* FeedViewControllerTests.swift */,
 			);
 			path = EssentialDeviOSTests;
+			sourceTree = "<group>";
+		};
+		0FC740532DB57BE300EA4604 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0FC740542DB57BFA00EA4604 /* UIImage+TestHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -749,6 +760,7 @@
 			files = (
 				0FC740052DB2155600EA4604 /* FeedViewControllerTests.swift in Sources */,
 				0FC740062DB217AF00EA4604 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				0FC740552DB57BFA00EA4604 /* UIImage+TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
