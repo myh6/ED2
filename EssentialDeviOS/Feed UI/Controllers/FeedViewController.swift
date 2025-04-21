@@ -8,10 +8,6 @@
 import UIKit
 import EssentialDev
 
-public protocol FeedImageDataLoaderTask {
-    func cancel()
-}
-
 public final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching {
     public var refreshController: FeedRefreshViewController?
     var tableModel = [FeedImageCellController]() {
