@@ -21,6 +21,7 @@ extension FeedViewController {
             }
         }
         refreshControl = fake
+        refreshController?.view = fake
     }
     
     func simulateUserInitiatedFeedReload() {
