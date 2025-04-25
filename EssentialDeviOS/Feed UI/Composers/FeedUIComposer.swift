@@ -12,7 +12,7 @@ public final class FeedUIComposer {
     private init() {}
     
     public static func feedComposedWith(feedLoader: FeedLoader, imageLoader: FeedImageDataLoader) -> FeedViewController {
-        let presentationAdapter = FeedLoaderPresentationAdpater(feedLoader: feedLoader)
+        let presentationAdapter = FeedLoaderPresentationAdapter(feedLoader: feedLoader)
         
         let bundle = Bundle(for: FeedViewController.self)
         let storyboard = UIStoryboard(name: "Feed", bundle: bundle)
@@ -72,7 +72,7 @@ extension WeakRefVirtualProxy: FeedImageView where T: FeedImageView, T.Image == 
     }
 }
 
-private final class FeedLoaderPresentationAdpater: FeedRefreshViewControllerDelegate {
+private final class FeedLoaderPresentationAdapter: FeedRefreshViewControllerDelegate {
     private let feedLoader: FeedLoader
     var presenter: FeedPresenter?
     
