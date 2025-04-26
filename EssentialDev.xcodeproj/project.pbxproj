@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F07168C2DBC667F006F01D1 /* Feed.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0F07168B2DBC667F006F01D1 /* Feed.xcstrings */; };
 		0F1542F32B96A4BC00AF81B1 /* EssentialDevCacheIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1542F22B96A4BC00AF81B1 /* EssentialDevCacheIntegrationTests.swift */; };
 		0F1542F42B96A4BC00AF81B1 /* EssentialDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1CDD8E2B3D73160080C5F5 /* EssentialDev.framework */; };
 		0F1542FD2B96A63800AF81B1 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345A162B63839F007528BD /* XCTestCase+MemoryLeakTracking.swift */; };
@@ -134,6 +135,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F07168B2DBC667F006F01D1 /* Feed.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Feed.xcstrings; sourceTree = "<group>"; };
 		0F1542F02B96A4BC00AF81B1 /* EssentialDevCacheIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialDevCacheIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1542F22B96A4BC00AF81B1 /* EssentialDevCacheIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialDevCacheIntegrationTests.swift; sourceTree = "<group>"; };
 		0F1542FA2B96A4D100AF81B1 /* EssentialDevCacheIntegrationTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialDevCacheIntegrationTests.xctestplan; sourceTree = "<group>"; };
@@ -465,6 +467,7 @@
 				0F2615A82DB88B0A00DC5D92 /* FeedImagePresenter.swift */,
 				0F2615AA2DB896B300DC5D92 /* FeedViewModel.swift */,
 				0F2615AC2DB896BB00DC5D92 /* FeedLoadingViewModel.swift */,
+				0F07168B2DBC667F006F01D1 /* Feed.xcstrings */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -792,6 +795,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F07168C2DBC667F006F01D1 /* Feed.xcstrings in Resources */,
 				0F2615F32DBB11AD00DC5D92 /* Feed.storyboard in Resources */,
 				0F2615F52DBB121200DC5D92 /* Feed.xcassets in Resources */,
 			);
@@ -1044,6 +1048,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1104,6 +1109,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
