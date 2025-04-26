@@ -10,6 +10,12 @@
             "value" : "My Feed"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meu Feed"
+          }
+        },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
