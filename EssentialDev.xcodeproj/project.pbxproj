@@ -751,6 +751,7 @@
 				Base,
 				"zh-Hant",
 				"pt-BR",
+				el,
 			);
 			mainGroup = 0F1CDD842B3D73160080C5F5;
 			productRefGroup = 0F1CDD8F2B3D73160080C5F5 /* Products */;
