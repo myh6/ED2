@@ -25,6 +25,10 @@ final class FeedPresenter {
         self.loadingView = loadingView
     }
     
+    static var title: String {
+        return String(localized: "FEED_VIEW_TITLE", table: "Feed", bundle: Bundle(for: FeedViewController.self))
+    }
+    
     func didStartLoadingFeed() {
         loadingView.display(FeedLoadingViewModel(isLoading: true))
     }
