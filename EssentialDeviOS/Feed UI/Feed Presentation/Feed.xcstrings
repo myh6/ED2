@@ -9,6 +9,12 @@
             "state" : "translated",
             "value" : "My Feed"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我的動態"
+          }
         }
       }
     }
