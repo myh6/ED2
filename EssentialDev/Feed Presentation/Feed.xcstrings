@@ -25,7 +25,7 @@
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "無法連結至伺服器"
+            "value" : "無法連接至伺服器"
           }
         }
       }
