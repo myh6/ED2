@@ -83,7 +83,7 @@
 		0FA99BF42DC1AE2700C155EE /* RemoteFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA99BF32DC1AE2700C155EE /* RemoteFeedImageDataLoader.swift */; };
 		0FA99BF72DC1CD8900C155EE /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA99BF62DC1CD8900C155EE /* HTTPURLResponse+StatusCode.swift */; };
 		0FA99BF92DC1CE3D00C155EE /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA99BF82DC1CE3D00C155EE /* URLProtocolStub.swift */; };
-		0FA99BFB2DC1CFED00C155EE /* LocalFeedImageDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA99BFA2DC1CFED00C155EE /* LocalFeedImageDataLoaderTests.swift */; };
+		0FA99BFB2DC1CFED00C155EE /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA99BFA2DC1CFED00C155EE /* LoadFeedImageDataFromCacheUseCaseTests.swift */; };
 		0FA99BFD2DC1D36000C155EE /* LocalFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA99BFC2DC1D36000C155EE /* LocalFeedImageDataLoader.swift */; };
 		0FA99BFF2DC1D39700C155EE /* FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA99BFE2DC1D39700C155EE /* FeedImageDataStore.swift */; };
 		0FC73FED2DB214CE00EA4604 /* EssentialDeviOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC73FE52DB214CE00EA4604 /* EssentialDeviOS.framework */; };
@@ -231,7 +231,7 @@
 		0FA99BF32DC1AE2700C155EE /* RemoteFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedImageDataLoader.swift; sourceTree = "<group>"; };
 		0FA99BF62DC1CD8900C155EE /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 		0FA99BF82DC1CE3D00C155EE /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
-		0FA99BFA2DC1CFED00C155EE /* LocalFeedImageDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoaderTests.swift; sourceTree = "<group>"; };
+		0FA99BFA2DC1CFED00C155EE /* LoadFeedImageDataFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedImageDataFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		0FA99BFC2DC1D36000C155EE /* LocalFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImageDataLoader.swift; sourceTree = "<group>"; };
 		0FA99BFE2DC1D39700C155EE /* FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStore.swift; sourceTree = "<group>"; };
 		0FC73FE52DB214CE00EA4604 /* EssentialDeviOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialDeviOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -425,7 +425,7 @@
 				0F71DA2C2B72FA970044C999 /* ValidateFeedCacheUseCase.swift */,
 				0F71DA362B76EB2A0044C999 /* CodableFeedStoreTests.swift */,
 				0F8915B82B913CAF00D2CFD4 /* CoreDataFeedStoreTests.swift */,
-				0FA99BFA2DC1CFED00C155EE /* LocalFeedImageDataLoaderTests.swift */,
+				0FA99BFA2DC1CFED00C155EE /* LoadFeedImageDataFromCacheUseCaseTests.swift */,
 				0F71DA462B85CB360044C999 /* FeedStoreSpecs */,
 			);
 			path = "Feed Cache";
@@ -958,7 +958,7 @@
 				0F71DA452B85CABD0044C999 /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */,
 				0F71DA412B85C9B30044C999 /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift in Sources */,
 				0F71DA0C2B70218B0044C999 /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
-				0FA99BFB2DC1CFED00C155EE /* LocalFeedImageDataLoaderTests.swift in Sources */,
+				0FA99BFB2DC1CFED00C155EE /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */,
 				0F71DA3D2B85C5BD0044C999 /* FeedStoreSpecs.swift in Sources */,
 				0F345A172B63839F007528BD /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				0F8915B92B913CAF00D2CFD4 /* CoreDataFeedStoreTests.swift in Sources */,
