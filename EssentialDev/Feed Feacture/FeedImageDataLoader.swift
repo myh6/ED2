@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import EssentialDev
 
 public protocol FeedImageDataLoader {
     typealias Result = Swift.Result<Data, Error>
