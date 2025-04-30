@@ -241,6 +241,7 @@
 		0FA99C002DC1D6FA00C155EE /* FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStore.swift; sourceTree = "<group>"; };
 		0FA99C032DC1D76E00C155EE /* CacheFeedImageDataUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedImageDataUseCaseTests.swift; sourceTree = "<group>"; };
 		0FA99C052DC1DAA000C155EE /* CoreDataFeedImageDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedImageDataStoreTests.swift; sourceTree = "<group>"; };
+		0FA99C072DC1E33000C155EE /* FeedStore 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "FeedStore 2.xcdatamodel"; sourceTree = "<group>"; };
 		0FC73FE52DB214CE00EA4604 /* EssentialDeviOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialDeviOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC73FEC2DB214CE00EA4604 /* EssentialDeviOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialDeviOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC73FFB2DB214E200EA4604 /* EssentialDeviOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialDeviOS.h; sourceTree = "<group>"; };
@@ -1578,9 +1579,10 @@
 		0F8915BC2B913F7400D2CFD4 /* FeedStore.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				0FA99C072DC1E33000C155EE /* FeedStore 2.xcdatamodel */,
 				0F8915BD2B913F7400D2CFD4 /* FeedStore.xcdatamodel */,
 			);
-			currentVersion = 0F8915BD2B913F7400D2CFD4 /* FeedStore.xcdatamodel */;
+			currentVersion = 0FA99C072DC1E33000C155EE /* FeedStore 2.xcdatamodel */;
 			path = FeedStore.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
