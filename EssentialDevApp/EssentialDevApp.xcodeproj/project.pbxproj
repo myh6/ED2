@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0F7F5E602DC6980800589B28 /* EssentialDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7F5E5F2DC6980700589B28 /* EssentialDev.framework */; };
+		0F7F5E612DC6980800589B28 /* EssentialDev.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7F5E5F2DC6980700589B28 /* EssentialDev.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F7F5E642DC6980B00589B28 /* EssentialDeviOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7F5E632DC6980B00589B28 /* EssentialDeviOS.framework */; };
+		0F7F5E652DC6980B00589B28 /* EssentialDeviOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7F5E632DC6980B00589B28 /* EssentialDeviOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0F7F5E2B2DC696D800589B28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,10 +30,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0F7F5E622DC6980800589B28 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0F7F5E612DC6980800589B28 /* EssentialDev.framework in Embed Frameworks */,
+				0F7F5E652DC6980B00589B28 /* EssentialDeviOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0F7F5E142DC696D800589B28 /* EssentialDevApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialDevApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7F5E2A2DC696D800589B28 /* EssentialDevAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialDevAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7F5E342DC696D800589B28 /* EssentialDevAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialDevAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F7F5E5F2DC6980700589B28 /* EssentialDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F7F5E632DC6980B00589B28 /* EssentialDeviOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialDeviOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7F5E602DC6980800589B28 /* EssentialDev.framework in Frameworks */,
+				0F7F5E642DC6980B00589B28 /* EssentialDeviOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +117,7 @@
 				0F7F5E162DC696D800589B28 /* EssentialDevApp */,
 				0F7F5E2D2DC696D800589B28 /* EssentialDevAppTests */,
 				0F7F5E372DC696D800589B28 /* EssentialDevAppUITests */,
+				0F7F5E5E2DC6980700589B28 /* Frameworks */,
 				0F7F5E152DC696D800589B28 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +132,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		0F7F5E5E2DC6980700589B28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F5E632DC6980B00589B28 /* EssentialDeviOS.framework */,
+				0F7F5E5F2DC6980700589B28 /* EssentialDev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +151,7 @@
 				0F7F5E102DC696D800589B28 /* Sources */,
 				0F7F5E112DC696D800589B28 /* Frameworks */,
 				0F7F5E122DC696D800589B28 /* Resources */,
+				0F7F5E622DC6980800589B28 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
