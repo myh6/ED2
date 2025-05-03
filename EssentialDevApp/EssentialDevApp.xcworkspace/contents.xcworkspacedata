@@ -7,4 +7,7 @@
    <FileRef
       location = "container:EssentialDevApp.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:EssentialDevApp.xctestplan">
+   </FileRef>
 </Workspace>
