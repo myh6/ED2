@@ -23,12 +23,11 @@
         }
       ]
     },
-    "testExecutionOrdering" : "random",
-    "threadSanitizerEnabled" : true
+    "testExecutionOrdering" : "random"
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
+      "parallelizable" : false,
       "target" : {
         "containerPath" : "container:EssentialDev.xcodeproj",
         "identifier" : "0F1CDD972B3D73170080C5F5",
@@ -53,7 +52,7 @@
     {
       "target" : {
         "containerPath" : "container:EssentialDev.xcodeproj",
-        "identifier" : "0F9E75172DB1B17200641531",
+        "identifier" : "0FC73FEB2DB214CE00EA4604",
         "name" : "EssentialDeviOSTests"
       }
     }
