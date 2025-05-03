@@ -9,15 +9,25 @@
     }
   ],
   "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:EssentialDevApp.xcodeproj",
+          "identifier" : "0F7F5E132DC696D800589B28",
+          "name" : "EssentialDevApp"
+        }
+      ]
+    },
     "targetForVariableExpansion" : {
       "containerPath" : "container:EssentialDevApp.xcodeproj",
       "identifier" : "0F7F5E132DC696D800589B28",
       "name" : "EssentialDevApp"
-    }
+    },
+    "testExecutionOrdering" : "random"
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
+      "parallelizable" : false,
       "target" : {
         "containerPath" : "container:EssentialDevApp.xcodeproj",
         "identifier" : "0F7F5E292DC696D800589B28",
