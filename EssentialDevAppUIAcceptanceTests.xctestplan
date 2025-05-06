@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "F37B91FB-A73D-4CA2-B5F6-92A09194B0D4",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:EssentialDevApp.xcodeproj",
+          "identifier" : "0F7F5E132DC696D800589B28",
+          "name" : "EssentialDevApp"
+        }
+      ]
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:EssentialDevApp.xcodeproj",
+        "identifier" : "0F7F5FB42DC9688E00589B28",
+        "name" : "EssentialDevAppUIAcceptanceTests"
+      }
+    }
+  ],
+  "version" : 1
+}

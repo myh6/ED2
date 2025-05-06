@@ -90,6 +90,9 @@
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3cc-NM-u8V">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="feed-image-view">
+                                                                <bool key="isElement" value="YES"/>
+                                                            </accessibility>
                                                         </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnn-ye-sIb">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
@@ -142,6 +145,9 @@
                                         <constraint firstItem="yTA-IB-yze" firstAttribute="top" secondItem="Hn0-on-qu4" secondAttribute="topMargin" priority="999" constant="6" id="pNa-bp-LEG"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="feed-image-cell">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="N15-rq-lXH" id="iN6-c1-sPA"/>
                                     <outlet property="feedImageContainer" destination="xkq-Gy-CRf" id="Cgf-H4-i7Q"/>

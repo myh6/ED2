@@ -17,7 +17,7 @@
                BlueprintIdentifier = "0F1CDD8D2B3D73160080C5F5"
                BuildableName = "EssentialDev.framework"
                BlueprintName = "EssentialDev"
-               ReferencedContainer = "container:EssentialDev.xcodeproj">
+               ReferencedContainer = "container:../EssentialDev.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -57,7 +57,7 @@
             BlueprintIdentifier = "0F1CDD8D2B3D73160080C5F5"
             BuildableName = "EssentialDev.framework"
             BlueprintName = "EssentialDev"
-            ReferencedContainer = "container:EssentialDev.xcodeproj">
+            ReferencedContainer = "container:../EssentialDev.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
