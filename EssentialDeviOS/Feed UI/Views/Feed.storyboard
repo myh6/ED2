@@ -20,7 +20,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qz-e5-Ymo">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="16"/>
+                                    <rect key="frame" x="0.0" y="8" width="393" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -29,9 +29,9 @@
                             <color key="backgroundColor" red="0.99917024369999996" green="0.41671711210000001" blue="0.41421309109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <gestureRecognizers/>
                             <constraints>
-                                <constraint firstItem="1qz-e5-Ymo" firstAttribute="top" secondItem="XeW-xk-m1Q" secondAttribute="top" id="BQ6-5C-aHP"/>
+                                <constraint firstItem="1qz-e5-Ymo" firstAttribute="top" secondItem="XeW-xk-m1Q" secondAttribute="top" constant="8" id="BQ6-5C-aHP"/>
                                 <constraint firstAttribute="trailing" secondItem="1qz-e5-Ymo" secondAttribute="trailing" id="MQa-4R-nfG"/>
-                                <constraint firstAttribute="bottom" secondItem="1qz-e5-Ymo" secondAttribute="bottom" id="Yo8-EY-kPR"/>
+                                <constraint firstAttribute="bottom" secondItem="1qz-e5-Ymo" secondAttribute="bottom" constant="8" id="Yo8-EY-kPR"/>
                                 <constraint firstItem="1qz-e5-Ymo" firstAttribute="leading" secondItem="XeW-xk-m1Q" secondAttribute="leading" id="zQI-ye-Zq1"/>
                             </constraints>
                             <connections>

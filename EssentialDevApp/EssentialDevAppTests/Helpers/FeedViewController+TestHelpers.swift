@@ -16,31 +16,30 @@ extension FeedViewController {
     var isShowingLoadingIndicator: Bool {
         return refreshControl?.isRefreshing == true
     }
-    
-    func renderedFeedImageData(at index: Int) -> Data? {
-        return simulateFeedImageViewVisible(at: index)?.renderedImage
-    }
-    
-    func replaceRefreshControlWithFakeForiOS17Support() {
-        let fake = FakeRefreshControl()
-        refreshControl?.allTargets.forEach{ target in
-            refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach{ action in
-                fake.addTarget(target, action: Selector(action), for: .valueChanged)
-            }
+
+    func simulateAppearance() {
+        if !isViewLoaded {
+            loadViewIfNeeded()
+            prepareForFirstAppearance()
         }
-        refreshControl = fake
+
+        beginAppearanceTransition(true, animated: false)
+        endAppearanceTransition()
     }
-    
+
+    private func prepareForFirstAppearance() {
+        setSmallFrameToPreventRenderingCells()
+        replaceRefreshControlWithFakeForiOS17Support()
+    }
+
+    private func setSmallFrameToPreventRenderingCells() {
+        tableView.frame = CGRect(x: 0, y: 0, width: 390, height: 1)
+    }
+
     func simulateUserInitiatedFeedReload() {
         refreshControl?.simulatePullToRefresh()
     }
-    
-    func simulateViewIsAppearing() {
-        beginAppearanceTransition(true, animated: false) // viewWillAppear
-        endAppearanceTransition() // viewIsAppearing+viewDidAppear
-        
-    }
-    
+
     @discardableResult
     func simulateFeedImageViewVisible(at index: Int) -> FeedImageCell? {
         return feedImageView(at: index) as? FeedImageCell
@@ -51,32 +50,15 @@ extension FeedViewController {
         let view = simulateFeedImageViewVisible(at: row)
         
         let delegate = tableView.delegate
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         delegate?.tableView?(tableView, didEndDisplaying: view!, forRowAt: index)
         
         return view
     }
-    
-    func numberOfRenderedFeedImageViews() -> Int {
-        return tableView.numberOfRows(inSection: feedImageSection)
-    }
-    
-    private var feedImageSection: Int {
-        return 0
-    }
-    
-    func feedImageView(at row: Int = 0) -> UITableViewCell? {
-        guard numberOfRenderedFeedImageViews() > row else {
-            return nil
-        }
-        let ds = tableView.dataSource
-        let index = IndexPath(row: row, section: feedImageSection)
-        return ds?.tableView(tableView, cellForRowAt: index)
-    }
-    
+
     func simulateFeedImageViewNearVisible(at row: Int) {
         let ds = tableView.prefetchDataSource
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         ds?.tableView(tableView, prefetchRowsAt: [index])
     }
     
@@ -84,8 +66,40 @@ extension FeedViewController {
         simulateFeedImageViewNearVisible(at: row)
 
         let ds = tableView.prefetchDataSource
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         ds?.tableView?(tableView, cancelPrefetchingForRowsAt: [index])
+    }
+
+    func renderedFeedImageData(at index: Int) -> Data? {
+        return simulateFeedImageViewVisible(at: index)?.renderedImage
+    }
+
+    func replaceRefreshControlWithFakeForiOS17Support() {
+        let fake = FakeRefreshControl()
+
+        refreshControl?.allTargets.forEach { target in
+            refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach { action in
+                fake.addTarget(target, action: Selector(action), for: .valueChanged)
+            }
+        }
+
+        refreshControl = fake
+    }
+
+    func numberOfRenderedFeedImageViews() -> Int {
+        return tableView.numberOfRows(inSection: feedImagesSection)
+    }
+
+    func feedImageView(at index: Int) -> UITableViewCell? {
+        guard numberOfRenderedFeedImageViews() > index else { return nil }
+        
+        let ds = tableView.dataSource
+        let index = IndexPath(row: index, section: feedImagesSection)
+        return ds?.tableView(tableView, cellForRowAt: index)
+    }
+
+    private var feedImagesSection: Int {
+        return 0
     }
 }
 
