@@ -11,11 +11,13 @@ import EssentialDeviOS
 
 class LoaderSpy: FeedLoader, FeedImageDataLoader {
     //MARK: - FeedLoader
-    private(set) var loadFeedCallCount = 0
+    var loadFeedCallCount: Int {
+        return feedRequests.count
+    }
+    
     private var feedRequests = [(FeedLoader.Result) -> Void]()
     
     func load(completion: @escaping (FeedLoader.Result) -> Void) {
-        loadFeedCallCount += 1
         feedRequests.append(completion)
     }
     
