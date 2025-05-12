@@ -366,6 +366,7 @@
 				0F345A2E2B6B3DB1007528BD /* Feed Cache */,
 				0F1CDDAC2B3D746B0080C5F5 /* Feed Feacture */,
 				0F23BBAF2B4C974800427AFB /* Feed API */,
+				0F7F65242DD17E0C00589B28 /* Image Comments API */,
 				0F1CDD912B3D73160080C5F5 /* EssentialDev_.h */,
 				0F1CDD922B3D73160080C5F5 /* EssentialDev_.docc */,
 			);
@@ -381,6 +382,7 @@
 				0FA99B662DBF189D00C155EE /* Feed Presentation */,
 				0F345A2B2B685CA3007528BD /* Feed Cache */,
 				0F345A122B4F8DBD007528BD /* Feed API */,
+				0F7F65252DD17E3200589B28 /* Image Comments API */,
 			);
 			path = EssentialDevTests;
 			sourceTree = "<group>";
@@ -405,8 +407,6 @@
 				0F345A102B4F87F3007528BD /* FeedItemMapper.swift */,
 				0F345A332B6B4D0E007528BD /* RemoteFeedItem.swift */,
 				0FA99BF32DC1AE2700C155EE /* RemoteFeedImageDataLoader.swift */,
-				0F7F65132DD1343D00589B28 /* ImageCommentsMapper.swift */,
-				0F7F65192DD1352100589B28 /* RemoteImageCommentsLoader.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -416,7 +416,6 @@
 			children = (
 				0F23BBAD2B4C8EFC00427AFB /* LoadFeedFromRemoteUseCaseTests.swift */,
 				0FA99BEE2DC1A29500C155EE /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
-				0F7F65152DD134B200589B28 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -610,6 +609,23 @@
 				0FA99BF12DC1AD9C00C155EE /* HTTPClientSpy.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0F7F65242DD17E0C00589B28 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F65132DD1343D00589B28 /* ImageCommentsMapper.swift */,
+				0F7F65192DD1352100589B28 /* RemoteImageCommentsLoader.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
+		0F7F65252DD17E3200589B28 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F65152DD134B200589B28 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
+			);
+			path = "Image Comments API";
 			sourceTree = "<group>";
 		};
 		0F9E74F92DB1AFBE00641531 /* Frameworks */ = {
