@@ -78,3 +78,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             .eraseToAnyPublisher()
     }
 }
+
+extension RemoteLoader: FeedLoader where Resource == [FeedImage] {}
