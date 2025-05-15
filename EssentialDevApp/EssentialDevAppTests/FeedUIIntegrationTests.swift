@@ -7,6 +7,7 @@
 
 import XCTest
 import UIKit
+import Combine
 import EssentialDev
 import EssentialDeviOS
 import EssentialDevApp
