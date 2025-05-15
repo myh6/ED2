@@ -1,37 +1,34 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "FEED_VIEW_TITLE" : {
+    "GENERIC_CONNECTION_ERROR" : {
       "extractionState" : "manual",
       "localizations" : {
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Το Feed μου"
+            "value" : "Δεν ήταν δυνατή η σύνδεση στο διακομιστή"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "My Feed"
+            "value" : "Couldn’t connect to server"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Meu Feed"
+            "value" : "Não foi possível conectar com o servidor"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "我的動態"
+            "value" : "無法連接至伺服器"
           }
         }
       }
-    },
-    "GENERIC_CONNECTION_ERROR" : {
-      "comment" : "Error message displayed when we can't load the image feed from the server"
     }
   },
   "version" : "1.0"
