@@ -31,33 +31,7 @@
       }
     },
     "GENERIC_CONNECTION_ERROR" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Δεν ήταν δυνατή η σύνδεση στο διακομιστή"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Couldn’t connect to server"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Não foi possível conectar com o servidor"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "無法連接至伺服器"
-          }
-        }
-      }
+      "comment" : "Error message displayed when we can't load the image feed from the server"
     }
   },
   "version" : "1.0"

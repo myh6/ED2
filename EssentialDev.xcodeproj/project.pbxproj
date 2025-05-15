@@ -11,6 +11,8 @@
 		0F1297032DD1A9F500AC1D2B /* FeedImageDataMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1297022DD1A9F500AC1D2B /* FeedImageDataMapperTests.swift */; };
 		0F12977E2DD569E100AC1D2B /* LoadResourcePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F12977D2DD569E100AC1D2B /* LoadResourcePresenterTests.swift */; };
 		0F1297812DD56A6F00AC1D2B /* LoadResourcePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1297802DD56A6F00AC1D2B /* LoadResourcePresenter.swift */; };
+		0F1297832DD56FEB00AC1D2B /* Shared.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0F1297822DD56FEB00AC1D2B /* Shared.xcstrings */; };
+		0F1297852DD5738800AC1D2B /* SharedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1297842DD5738800AC1D2B /* SharedLocalizationTests.swift */; };
 		0F1542F32B96A4BC00AF81B1 /* EssentialDevCacheIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1542F22B96A4BC00AF81B1 /* EssentialDevCacheIntegrationTests.swift */; };
 		0F1542F42B96A4BC00AF81B1 /* EssentialDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1CDD8E2B3D73160080C5F5 /* EssentialDev.framework */; };
 		0F1542FD2B96A63800AF81B1 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F345A162B63839F007528BD /* XCTestCase+MemoryLeakTracking.swift */; };
@@ -165,6 +167,8 @@
 		0F1297022DD1A9F500AC1D2B /* FeedImageDataMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataMapperTests.swift; sourceTree = "<group>"; };
 		0F12977D2DD569E100AC1D2B /* LoadResourcePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenterTests.swift; sourceTree = "<group>"; };
 		0F1297802DD56A6F00AC1D2B /* LoadResourcePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenter.swift; sourceTree = "<group>"; };
+		0F1297822DD56FEB00AC1D2B /* Shared.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Shared.xcstrings; sourceTree = "<group>"; };
+		0F1297842DD5738800AC1D2B /* SharedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTests.swift; sourceTree = "<group>"; };
 		0F1542F02B96A4BC00AF81B1 /* EssentialDevCacheIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialDevCacheIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1542F22B96A4BC00AF81B1 /* EssentialDevCacheIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialDevCacheIntegrationTests.swift; sourceTree = "<group>"; };
 		0F1542FA2B96A4D100AF81B1 /* EssentialDevCacheIntegrationTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialDevCacheIntegrationTests.xctestplan; sourceTree = "<group>"; };
@@ -315,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				0F12977D2DD569E100AC1D2B /* LoadResourcePresenterTests.swift */,
+				0F1297842DD5738800AC1D2B /* SharedLocalizationTests.swift */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				0F1297802DD56A6F00AC1D2B /* LoadResourcePresenter.swift */,
+				0F1297822DD56FEB00AC1D2B /* Shared.xcstrings */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -915,6 +921,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F1297832DD56FEB00AC1D2B /* Shared.xcstrings in Resources */,
 				0FA99B6D2DBF1C0500C155EE /* Feed.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1032,6 +1039,7 @@
 				0F7F65162DD134B200589B28 /* ImageCommentsMapperTests.swift in Sources */,
 				0F71DA312B73083F0044C999 /* SharedTestHelpers.swift in Sources */,
 				0F71DA2D2B72FA970044C999 /* ValidateFeedCacheUseCase.swift in Sources */,
+				0F1297852DD5738800AC1D2B /* SharedLocalizationTests.swift in Sources */,
 				0F71DA452B85CABD0044C999 /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */,
 				0F71DA412B85C9B30044C999 /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift in Sources */,
 				0F71DA0C2B70218B0044C999 /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
