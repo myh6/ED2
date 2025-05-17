@@ -8,7 +8,7 @@
 import UIKit
 import EssentialDeviOS
 
-extension FeedViewController {
+extension ListViewController {
     var errorMessage: String? {
         return errorView?.message
     }
