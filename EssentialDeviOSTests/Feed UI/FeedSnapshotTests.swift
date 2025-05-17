@@ -39,10 +39,6 @@ class FeedSnapshotTests: XCTestCase {
         controller.tableView.showsHorizontalScrollIndicator = false
         return controller
     }
-
-    private func emptyFeed() -> [CellController] {
-        return []
-    }
     
     private func feedWithContent() -> [ImageStub] {
         return [
