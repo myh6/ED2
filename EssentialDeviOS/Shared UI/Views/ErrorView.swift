@@ -21,26 +21,26 @@ public final class ErrorView: UIView {
         label.text = nil
         alpha = 0
         }
-
-        private var isVisible: Bool {
-            return alpha > 0
+    
+    private var isVisible: Bool {
+        return alpha > 0
+    }
+    
+    private func setMessageAnimated(_ message: String?) {
+        if let message = message {
+            showAnimated(message)
+        } else {
+            hideMessageAnimated()
         }
-
-        private func setMessageAnimated(_ message: String?) {
-            if let message = message {
-                showAnimated(message)
-            } else {
-                hideMessageAnimated()
-            }
+    }
+    
+    private func showAnimated(_ message: String) {
+        label.text = message
+        
+        UIView.animate(withDuration: 0.25) {
+            self.alpha = 1
         }
-
-        private func showAnimated(_ message: String) {
-            label.text = message
-
-            UIView.animate(withDuration: 0.25) {
-                self.alpha = 1
-            }
-        }
+    }
 
     @IBAction private func hideMessageAnimated() {
         UIView.animate(
