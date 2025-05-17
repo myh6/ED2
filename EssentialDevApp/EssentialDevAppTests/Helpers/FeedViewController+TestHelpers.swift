@@ -10,7 +10,7 @@ import EssentialDeviOS
 
 extension ListViewController {
     var errorMessage: String? {
-        return errorView?.message
+        return errorView.message
     }
     
     var isShowingLoadingIndicator: Bool {
@@ -25,6 +25,10 @@ extension ListViewController {
 
         beginAppearanceTransition(true, animated: false)
         endAppearanceTransition()
+    }
+    
+    func simulateErrorViewTap() {
+        errorView.simulateTap()
     }
 
     private func prepareForFirstAppearance() {
