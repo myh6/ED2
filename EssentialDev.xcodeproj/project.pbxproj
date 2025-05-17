@@ -523,6 +523,15 @@
 			path = "Image Comments Presentation";
 			sourceTree = "<group>";
 		};
+		0F3F050D2DD8D3A900BFD818 /* Feed UI */ = {
+			isa = PBXGroup;
+			children = (
+				0F7F62112DCC467B00589B28 /* snapshots */,
+				0F7F620F2DCC466B00589B28 /* FeedSnapshotTests.swift */,
+			);
+			path = "Feed UI";
+			sourceTree = "<group>";
+		};
 		0F6AF0B02B927F5C0027D15C /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,8 +726,7 @@
 			isa = PBXGroup;
 			children = (
 				0F7F62142DCC472B00589B28 /* Helpers */,
-				0F7F62112DCC467B00589B28 /* snapshots */,
-				0F7F620F2DCC466B00589B28 /* FeedSnapshotTests.swift */,
+				0F3F050D2DD8D3A900BFD818 /* Feed UI */,
 			);
 			path = EssentialDeviOSTests;
 			sourceTree = "<group>";
