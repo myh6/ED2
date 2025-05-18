@@ -32,7 +32,7 @@
                                             <rect key="frame" x="20" y="17" width="353" height="546"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="OzA-Ho-j7g" userLabel="Location Container">
-                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="58.333333333333336"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="42.666666666666664"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fqd-k7-OlQ" userLabel="Pin Container">
                                                             <rect key="frame" x="0.0" y="0.0" width="10" height="37"/>
@@ -53,16 +53,16 @@
                                                                 <constraint firstItem="FsW-Xh-3K0" firstAttribute="leading" secondItem="Fqd-k7-OlQ" secondAttribute="leading" id="Zkz-H2-9dt"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location, Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az5-Mr-1G7">
-                                                            <rect key="frame" x="16" y="0.0" width="337" height="36"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location, Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az5-Mr-1G7">
+                                                            <rect key="frame" x="16" y="0.0" width="337" height="38"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                             <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkq-Gy-CRf" userLabel="Image Container">
-                                                    <rect key="frame" x="0.0" y="68.333333333333314" width="353" height="353"/>
+                                                    <rect key="frame" x="0.0" y="52.666666666666686" width="353" height="353"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3cc-NM-u8V">
                                                             <rect key="frame" x="0.0" y="0.0" width="353" height="353"/>
@@ -100,10 +100,10 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N15-rq-lXH">
-                                                    <rect key="frame" x="0.0" y="431.33333333333331" width="340.33333333333331" height="114.66666666666669"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N15-rq-lXH">
+                                                    <rect key="frame" x="0.0" y="415.66666666666669" width="348.33333333333331" height="130.33333333333331"/>
                                                     <string key="text">Label LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel LabelLabel Label</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
