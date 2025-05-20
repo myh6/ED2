@@ -18,19 +18,19 @@ public final class CommentsUIComposer {
     public static func commentsComposedWith(
         commentsLoader: @escaping () -> AnyPublisher<[FeedImage], Error>) -> ListViewController {
             let presentationAdapter = FeedPresentationAdapter(loader: commentsLoader)
-        
-        let feedController = makeWith(title: FeedPresenter.title)
-        feedController.onRefresh = presentationAdapter.loadResource
-        
-        presentationAdapter.presenter = LoadResourcePresenter(
-            resourceView: FeedViewAdapter(
-                controller: feedController,
-                imageLoader: { _ in Empty<Data, Error>().eraseToAnyPublisher() }),
-            loadingView: WeakRefVirtualProxy(feedController),
-            errorView: WeakRefVirtualProxy(feedController),
-            mapper: FeedPresenter.map)
-        
-        return feedController
+            
+            let feedController = makeWith(title: ImageCommentsPresenter.title)
+            feedController.onRefresh = presentationAdapter.loadResource
+            
+            presentationAdapter.presenter = LoadResourcePresenter(
+                resourceView: FeedViewAdapter(
+                    controller: feedController,
+                    imageLoader: { _ in Empty<Data, Error>().eraseToAnyPublisher() }),
+                loadingView: WeakRefVirtualProxy(feedController),
+                errorView: WeakRefVirtualProxy(feedController),
+                mapper: FeedPresenter.map)
+            
+            return feedController
     }
 
     private static func makeWith(title: String) -> ListViewController {
