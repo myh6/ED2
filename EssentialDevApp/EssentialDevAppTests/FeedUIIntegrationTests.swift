@@ -12,7 +12,7 @@ import EssentialDev
 import EssentialDeviOS
 import EssentialDevApp
 
-final class FeedUIIntegrationTests: XCTestCase {
+class FeedUIIntegrationTests: XCTestCase {
     
     func test_feedView_hasTitle() {
         let (sut, _) = makeSUT()
@@ -391,7 +391,7 @@ final class FeedUIIntegrationTests: XCTestCase {
         return (sut, loaderSpy)
     }
     
-    private func makeImage(description: String? = nil, location: String? = nil, url: URL = URL(string: "https://any-url.com")!) -> FeedImage {
+    func makeImage(description: String? = nil, location: String? = nil, url: URL = URL(string: "https://any-url.com")!) -> FeedImage {
         return FeedImage(id: UUID(), description: description, location: location, url: url)
     }
     
