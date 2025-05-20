@@ -69,6 +69,7 @@ extension FeedImageCellController: UITableViewDataSource, UITableViewDelegate, U
     }
     
     private func releaseCellForReuse() {
+        cell?.onReuse = nil
         cell = nil
     }
 }
