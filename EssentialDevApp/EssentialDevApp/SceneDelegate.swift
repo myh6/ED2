@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     
     private lazy var url: URL = {
-        return URL(string: "https://static1.squarespace.com/static/5891c5b8d1758ec68ef5dbc2/t/5db4155a4fbade21d17ecd28/1572083034355/essential_app_feed.json")!
+        return URL(string: "https://ile-api.essentialdeveloper.com/essential-feed/v1/feed")!
     }()
     
     private lazy var httpClient: HTTPClient = {
