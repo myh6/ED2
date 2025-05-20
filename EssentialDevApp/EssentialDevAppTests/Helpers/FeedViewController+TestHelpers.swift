@@ -8,9 +8,9 @@
 import UIKit
 import EssentialDeviOS
 
-extension FeedViewController {
+extension ListViewController {
     var errorMessage: String? {
-        return errorView?.message
+        return errorView.message
     }
     
     var isShowingLoadingIndicator: Bool {
@@ -25,6 +25,10 @@ extension FeedViewController {
 
         beginAppearanceTransition(true, animated: false)
         endAppearanceTransition()
+    }
+    
+    func simulateErrorViewTap() {
+        errorView.simulateTap()
     }
 
     private func prepareForFirstAppearance() {
@@ -43,6 +47,17 @@ extension FeedViewController {
     @discardableResult
     func simulateFeedImageViewVisible(at index: Int) -> FeedImageCell? {
         return feedImageView(at: index) as? FeedImageCell
+    }
+    
+    @discardableResult
+    func simulateFeedImageBecomingVisibleAgain(at row: Int) -> FeedImageCell? {
+        let view = simulateFeedImageViewNotVisible(at: row)
+
+        let delegate = tableView.delegate
+        let index = IndexPath(row: row, section: feedImagesSection)
+        delegate?.tableView?(tableView, willDisplay: view!, forRowAt: index)
+
+        return view
     }
     
     @discardableResult
@@ -87,7 +102,8 @@ extension FeedViewController {
     }
 
     func numberOfRenderedFeedImageViews() -> Int {
-        return tableView.numberOfRows(inSection: feedImagesSection)
+        return tableView.numberOfSections == 0 ? 0 :
+        tableView.numberOfRows(inSection: feedImagesSection)
     }
 
     func feedImageView(at index: Int) -> UITableViewCell? {
