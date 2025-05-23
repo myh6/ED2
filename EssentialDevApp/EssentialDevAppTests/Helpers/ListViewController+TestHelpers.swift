@@ -16,13 +16,13 @@ extension ListViewController {
     var isShowingLoadingIndicator: Bool {
         return refreshControl?.isRefreshing == true
     }
-
+    
     func simulateAppearance() {
         if !isViewLoaded {
             loadViewIfNeeded()
             prepareForFirstAppearance()
         }
-
+        
         beginAppearanceTransition(true, animated: false)
         endAppearanceTransition()
     }
@@ -30,20 +30,35 @@ extension ListViewController {
     func simulateErrorViewTap() {
         errorView.simulateTap()
     }
-
+    
     private func prepareForFirstAppearance() {
         setSmallFrameToPreventRenderingCells()
         replaceRefreshControlWithFakeForiOS17Support()
     }
-
+    
     private func setSmallFrameToPreventRenderingCells() {
         tableView.frame = CGRect(x: 0, y: 0, width: 390, height: 1)
     }
+    
+    func replaceRefreshControlWithFakeForiOS17Support() {
+        let fake = FakeRefreshControl()
 
+        refreshControl?.allTargets.forEach { target in
+            refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach { action in
+                fake.addTarget(target, action: Selector(action), for: .valueChanged)
+            }
+        }
+
+        refreshControl = fake
+    }
+    
     func simulateUserInitiatedReload() {
         refreshControl?.simulatePullToRefresh()
     }
+}
 
+//MARK: - Feed Image
+extension ListViewController {
     @discardableResult
     func simulateFeedImageViewVisible(at index: Int) -> FeedImageCell? {
         return feedImageView(at: index) as? FeedImageCell
@@ -89,18 +104,6 @@ extension ListViewController {
         return simulateFeedImageViewVisible(at: index)?.renderedImage
     }
 
-    func replaceRefreshControlWithFakeForiOS17Support() {
-        let fake = FakeRefreshControl()
-
-        refreshControl?.allTargets.forEach { target in
-            refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach { action in
-                fake.addTarget(target, action: Selector(action), for: .valueChanged)
-            }
-        }
-
-        refreshControl = fake
-    }
-
     func numberOfRenderedFeedImageViews() -> Int {
         return tableView.numberOfSections == 0 ? 0 :
         tableView.numberOfRows(inSection: feedImagesSection)
@@ -115,6 +118,17 @@ extension ListViewController {
     }
 
     private var feedImagesSection: Int {
+        return 0
+    }
+}
+
+//MARK: - Comments
+extension ListViewController {
+    func numberOfRenderedComments() -> Int {
+        tableView.numberOfSections == 0 ? 0 : tableView.numberOfRows(inSection: commentsSecion)
+    }
+    
+    private var commentsSecion: Int {
         return 0
     }
 }
