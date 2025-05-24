@@ -55,6 +55,17 @@ extension ListViewController {
     func simulateUserInitiatedReload() {
         refreshControl?.simulatePullToRefresh()
     }
+    
+    func numberOfRows(in section: Int) -> Int {
+        tableView.numberOfSections > section ? tableView.numberOfRows(inSection: section) : 0
+    }
+    
+    func cell(row: Int, section: Int) -> UITableViewCell? {
+        guard numberOfRows(in: section) > row else { return nil }
+        let ds = tableView.dataSource
+        let index = IndexPath(row: row, section: section)
+        return ds?.tableView(tableView, cellForRowAt: index)
+    }
 }
 
 //MARK: - Feed Image
@@ -111,27 +122,20 @@ extension ListViewController {
     }
 
     func numberOfRenderedFeedImageViews() -> Int {
-        return tableView.numberOfSections == 0 ? 0 :
-        tableView.numberOfRows(inSection: feedImagesSection)
+        numberOfRows(in: feedImagesSection)
     }
 
-    func feedImageView(at index: Int) -> UITableViewCell? {
-        guard numberOfRenderedFeedImageViews() > index else { return nil }
-        
-        let ds = tableView.dataSource
-        let index = IndexPath(row: index, section: feedImagesSection)
-        return ds?.tableView(tableView, cellForRowAt: index)
+    func feedImageView(at row: Int) -> UITableViewCell? {
+        cell(row: row, section: feedImagesSection)
     }
 
-    private var feedImagesSection: Int {
-        return 0
-    }
+    private var feedImagesSection: Int { 0 }
 }
 
 //MARK: - Comments
 extension ListViewController {
     func numberOfRenderedComments() -> Int {
-        tableView.numberOfSections == 0 ? 0 : tableView.numberOfRows(inSection: commentsSecion)
+        numberOfRows(in: commentsSecion)
     }
     
     func commentMessage(at row: Int) -> String? {
@@ -147,16 +151,10 @@ extension ListViewController {
     }
     
     private func commentView(at row: Int) -> ImageCommentCell? {
-        guard numberOfRenderedComments() > row else { return nil }
-        
-        let ds = tableView.dataSource
-        let index = IndexPath(row: row, section: commentsSecion)
-        return ds?.tableView(tableView, cellForRowAt: index) as? ImageCommentCell
+        cell(row: row, section: commentsSecion) as? ImageCommentCell
     }
     
-    private var commentsSecion: Int {
-        return 0
-    }
+    private var commentsSecion: Int { 0 }
 }
 
 private class FakeRefreshControl: UIRefreshControl {
