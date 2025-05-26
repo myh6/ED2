@@ -22,7 +22,7 @@ private extension FeedImageDataCache {
         save(data, for: url) { _ in }
     }
 }
- 
+  
 public extension Paginated {
     init(items: [Item], loadMorePublisher: (() -> AnyPublisher<Self, Error>)?) {
         self.init(items: items, loadMore: loadMorePublisher.map { publisher in
