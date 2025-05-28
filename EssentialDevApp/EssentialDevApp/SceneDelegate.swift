@@ -20,8 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return .scheduler(for: store)
         }
         return DispatchQueue(label: "com.essentialdeveloper.infra.queue",
-                             qos: .userInitiated,
-                             attributes: .concurrent).eraseToAnyScheduler()
+                             qos: .userInitiated).eraseToAnyScheduler()
     }()
     
     private lazy var baseURL = URL(string: "https://ile-api.essentialdeveloper.com/essential-feed")!
@@ -46,7 +45,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         } catch {
             assertionFailure("Failed to instantiate CoreData store with error: \(error.localizedDescription)")
             logger.fault("Failed to instantiate CoreData store with error: \(error.localizedDescription)")
-            return NullStore()
+            return InMemoryFeedStore()
         }
     }()
       
