@@ -46,28 +46,6 @@
                ReferencedContainer = "container:EssentialDevApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F7F5E332DC696D800589B28"
-               BuildableName = "EssentialDevAppUITests.xctest"
-               BlueprintName = "EssentialDevAppUITests"
-               ReferencedContainer = "container:EssentialDevApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0F7F5FB42DC9688E00589B28"
-               BuildableName = "EssentialDevAppUIAcceptanceTests.xctest"
-               BlueprintName = "EssentialDevAppUIAcceptanceTests"
-               ReferencedContainer = "container:EssentialDevApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
