@@ -40,7 +40,7 @@ final class ValidateFeedCacheUseCase: XCTestCase {
         let feed = uniqueImageFeed()
         store.completeRetrieval(with: feed.local, timestamp: nonExpiredTimestamp)
         
-        sut.validateCache{ _ in }
+        sut.validateCache{ _ in } 
         
         XCTAssertEqual(store.receiveMessages, [.retrieve])
     }
